@@ -31,12 +31,12 @@ pygmentsstyle = "friendly"
 	# General information
 	author = "虞公"
 	description = "死磕以太坊区块链技术，最好的中文以太坊技术分享"
-	copyright = "根据Apache 2.03 许可发布"
+	copyright = '磨链社区-本站文章采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
 	# Repository
 	provider = "GitHub"
 	repo_name = "mochain/ethereumhelp"
-	repo_url = "https://github.com:mochain/ethereumhelp.git"
+	repo_url = "https://github.com/mochain/ethereumhelp.git"
 
 	version = "1.0.0"
 	logo = "images/logo.png"
