@@ -1,0 +1,144 @@
+baseurl = "http://ether.mochain.info" 
+languageCode = "zh-cn"
+title = "死磕以太坊"
+theme = "material"
+metadataformat = "yaml"
+canonifyurls = true
+enableEmoji = true
+# Set the unicode character used for the "return" link in page footnotes.
+footnotereturnlinkcontents = "↩"
+# When enabled, creates URL on the form /filename.html instead of /filename/.
+uglyURLs = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+# 启用rebots
+enableRobotsTXT = false 
+
+# If the Hugo site is versioned by Git, 
+# you will then get a .GitInfo object per page, and 
+# Lastmod will get updated by the last commit date for content.
+# see: https://gohugo.io/variables/git/
+enableGitInfo = false
+
+# user pygment and 
+pygmentsUseClassic = true 
+pygmentsuseclasses = true
+PygmentsCodeFences = true
+pygmentsstyle = "friendly" 
+
+[params]
+	# General information
+	author = "虞公"
+	description = "死磕以太坊区块链技术，最好的中文以太坊技术分享"
+	copyright = "根据Apache 2.03 许可发布"
+
+	# Repository
+	provider = "GitHub"
+	repo_name = "mochain/ethereumhelp"
+	repo_url = "https://github.com:mochain/ethereumhelp.git"
+
+	version = "1.0.0"
+	logo = "images/logo.png"
+	icon = ""
+	favicon = ""
+
+	# Permanent link char , Default "¶" 
+	permalink = ''
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	# Material supports both, left-to-right (ltr) and right-to-left (rtl) text direction, Default "ltr"
+	direction = ""
+	
+	[params.plugins]
+		search = false
+	[params.palette]
+		# red, pink, purple, deep purple, indigo, blue, light-blue, cyan, teal, green, light-green, lime, yellow, amber, orange, deep-orange, brown, grey and blue-grey. 
+    	primary = "light-gren"
+    	accent  = "indigo"
+
+    [params.font]
+		useimage = true
+    	text = "Noto Sans CJK"
+    	code = "Ubuntu Mono"
+	
+	[params.theme.feature]
+		tabs = true
+
+	[[params.social]] 
+		type = "github"
+		link= "https://github.com/ysqi"
+	[[params.social]] 
+		type = "wordpress"
+		link= "https://yushuangqi.com"
+	[[params.social]] 
+		type = "weibo"
+		link= "https://weibo.com/234665601"
+	[[params.social]] 
+		type = "user-circle"
+		link= "https://www.zhihu.com/people/_ysqi/"	
+	[[params.social]] 
+		type = "envelope-o"
+		link= "mailto:devysqi@gmail.com"	
+ 
+
+[[menu.docs]]
+    name = "最新动态"
+	# url = "/news.html"
+	identifier ="news"
+	weight = 1
+
+[[menu.docs]]
+    name = "快速入门"
+	# url = "/basic.html"
+	identifier ="basic"
+	weight = 10
+
+[[menu.docs]]
+    name = "Solidity编程语言"
+	# url = "/solidity.html"
+	identifier ="sol"
+	weight = 20	
+
+[[menu.docs]]
+    name = "智能合约开发套件"
+	# url = "/devsuite.html"
+	identifier ="devsuite"
+	weight = 20	
+
+[[menu.docs]]
+    name = "DAPP"
+	# url = "/dapp"
+	identifier ="dapp"
+	weight = 30	
+	
+[[menu.docs]]
+    name = "以太坊公链架构"
+	# url = "/goethereum.html" 
+	identifier="action"
+	weight = 40	 
+
+[[menu.docs]]
+    name = "资源导航"
+	url = "" 
+	identifier="resource"
+	weight = 40		
+
+[[menu.docs]]
+    name = "关于"
+	url = "/about.html" 
+	identifier="about"
+	weight = 9000	 
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
+ 

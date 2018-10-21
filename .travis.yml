@@ -1,0 +1,33 @@
+language: node_js
+node_js:
+- node
+sudo: required
+dist: trusty
+branches:
+  only:
+  - master
+before_install:
+- sudo pip install Pygments
+- sudo pip install pygments-lexer-solidity
+install:
+- mkdir work
+- wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb
+  -O $PWD/work/hugo.deb
+- sudo dpkg -i $PWD/work/hugo.deb
+- npm install 
+
+before_deploy:
+- grunt build   
+
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    local-dir: public
+    github-token: $GH_TOKEN     
+env:
+  global:
+  - REPO="github.com/mochain/ethereumhelp.git"
+  - USER="ysqi"
+  - EMAIL="devysq@gmail.com"
+  - SOURCE_DIR="public"
+  - DEPLOY_BRANCH="gh-pages"
