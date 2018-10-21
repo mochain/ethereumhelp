@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         },
         exec: {
             genCommits:{
-                cmd:"/bin/sh commits.sh"
+                cmd:"/bin/bash commits.sh" // Ubuntu下默认使用dash代替/bin/sh,所以强制使用/bin/bash
             },
             buildContent: {
                 cmd: "hugo -v",
