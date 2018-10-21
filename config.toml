@@ -96,7 +96,7 @@ pygmentsstyle = "friendly"
 
 [[menu.docs]]
     name = "快速入门"
-	# url = "/basic.html"
+	url = "/basic.html"
 	identifier ="basic"
 	weight = 10
 
