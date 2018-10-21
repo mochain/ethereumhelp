@@ -32,5 +32,6 @@ function readfile ()
 #函数定义结束，这里用来运行函数
 folder="./content"
 COMMITSFILE="./data/commits.yaml"
+mkdir -p "./data"
 echo "# auto gen" > "$COMMITSFILE"
 readfile $folder 
