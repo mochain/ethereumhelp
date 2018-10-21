@@ -14,7 +14,7 @@ function readfile ()
         #否则就能够读取该文件的地址
         filepath=$1"/"$file
         # 生成 yaml 格式的commit信息到指定文件
-        echo "$filepath:" >> $COMMITSFILE
+        echo "$filepath:" >> "$COMMITSFILE"
         git log --follow --pretty=format:'
     -
         hash: %H
@@ -24,7 +24,7 @@ function readfile ()
         datef: %cr
         message:
             %s
-' --name-only --no-merges  "$filepath" | grep -v '^$' |grep -Ev "\.md" || true >> $COMMITSFILE
+' --name-only --no-merges  "$filepath" | grep -v '^$' |grep -Ev "\.md" >> "$COMMITSFILE" || true
     
     fi
   done
@@ -32,5 +32,5 @@ function readfile ()
 #函数定义结束，这里用来运行函数
 folder="./content"
 COMMITSFILE="./data/commits.yaml"
-echo "# auto gen" > $COMMITSFILE
+echo "# auto gen" > "$COMMITSFILE"
 readfile $folder 
