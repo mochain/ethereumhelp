@@ -33,7 +33,7 @@ deploy:
 
 - provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet -e 'ssh -o StrictHostKeyChecking=no -p $DEPLOY_SSH_PORT' $TRAVIS_BUILD_DIR/$SOURCE_DIR $DEPLOY_SSH_USER@$DEPLOY_HOST:./ehtereumhelp/
+  script: rsync -r --delete-after --quiet -e 'ssh -o StrictHostKeyChecking=no -p $DEPLOY_SSH_PORT' $TRAVIS_BUILD_DIR/$SOURCE_DIR/ $DEPLOY_SSH_USER@$DEPLOY_HOST:$HOME/www/ethereumhelp/
   on:
     branch: master
 env:
