@@ -19,7 +19,7 @@ install:
 before_deploy:
 - grunt build
 # 解密
-- openssl aes-256-cbc -K $encrypted_98e3fd917d2e_key -iv $encrypted_98e3fd917d2e_iv -in deploy_rsa.enc -out deploy_rsa -d
+- openssl aes-256-cbc -K $encrypted_98e3fd917d2e_key -iv $encrypted_98e3fd917d2e_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
 # 将私钥加入环境
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/deploy_rsa
@@ -29,7 +29,8 @@ deploy:
 - provider: pages
   skip-cleanup: true
   local-dir: public
-  github-token: "$GH_TOKEN"  
+  github-token: "$GH_TOKEN" 
+   
 - provider: script
   skip_cleanup: true
   script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/$SOURCE_DIR $DEPLOY_SSH_USER@$DEPLOY_HOST:./ehtereumhelp/
