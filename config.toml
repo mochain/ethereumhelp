@@ -47,7 +47,7 @@ pygmentsstyle = "friendly"
 	permalink = ''
 
 	# Custom assets
-	custom_css = []
+	custom_css = ["main.css"]
 	custom_js  = []
 
 	# Syntax highlighting theme

@@ -1,0 +1,6 @@
+/* 首行缩进 */
+article>p{text-indent: 1cm;}
+/* 但不能影响标注部分 */
+sup{text-indent: 0;}
+/* 底部备注字体不需要同文章内容大小 */
+.footnotes{font-size: 1rem;}
