@@ -65,7 +65,7 @@ pygmentsstyle = "friendly"
 
     [params.font]
 		useimage = true
-    	text = "Noto Sans CJK"
+    	text = "Source Sans Pro,Helvetica Neue,Arial,sans-serif,Noto Sans CJK"
     	code = "Ubuntu Mono"
 	
 	[params.theme.feature]
