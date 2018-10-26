@@ -20,7 +20,19 @@
 .post {
     padding: 1.2em 2em; 
 }
-
+.post p img{
+    margin-left: auto; 
+    margin-right:auto; 
+    display:block;
+}
+@media only screen and (max-width: 44.9375em) {
+    .post {
+        padding: 1.2em 0.2em; 
+    }
+    .post-meta{
+        display: none;
+    }
+}
 .post .post-header {
     margin-bottom: 20px;
     text-align: center;
