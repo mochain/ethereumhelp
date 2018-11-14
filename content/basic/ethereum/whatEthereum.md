@@ -2,9 +2,10 @@
 title: "以太坊是什么鬼"
 date: 2018-10-26T22:40:51+08:00
 weight: 101001
-draft: true
+draft: false
 menu:
     docs:
+      name: "介绍"
       #identifier : ""
       parent: "basicethereum"
 ---
@@ -30,7 +31,6 @@ Vitalik 本以为自己的想法还存在不少漏洞，谁想到竟然受到了
 
 最初以太坊程序是由一间位在瑞士的公司 Ethereum Switzerland GmbH 开发[^2]，之后转移至一个非营利机构“以太坊基金会”（Ethereum Foundation）。
  
-
 
 [^1]: [以太坊白皮书]([https://github.com/ethereum/wiki/wiki/White-Paper)
 [^2]: [Replacing centralized systems of power and control with new technology](https://www.theepochtimes.com/the-entrepreneur-joe-lubin-coo-of-ethereum_668104.html)
