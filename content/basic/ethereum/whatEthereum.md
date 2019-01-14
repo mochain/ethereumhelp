@@ -26,7 +26,8 @@ Vitalik 本以为自己的想法还存在不少漏洞，谁想到竟然受到了
 
 彼时的 Vitalik ，刚刚获得10万美元Thiel奖学金[^3]（Paypal创始人、硅谷投资大佬 Peter Thiel 为鼓励20岁以下年轻人创业的奖学金）。这笔钱还没有焐热，就被 Vitalik 用来开发一个去中心化、基于区块链技术的计算平台，取名以太坊(Etherum)。
 
-然后，在2014年通过网上公开募资得到开发资金，投资人用比特币向基金会购买以太币。最初以太坊程序是由一间位在瑞士的公司 Ethereum Switzerland GmbH 开发[^2]，之后转移至一个非营利机构“以太坊基金会”（Ethereum Foundation）。
+然后，在2014年，以太坊团队为了获取开发资金，通过由比特币换取以太币的方式公开募资，也就是后来风行一时风的ICO（Initial Coin Offering）。
+最初以太坊程序是由一间位在瑞士的公司 Ethereum Switzerland GmbH 开发[^2]，之后转移至一个非营利机构“以太坊基金会”（Ethereum Foundation）。
 
 ## 以太坊开发计划
 
